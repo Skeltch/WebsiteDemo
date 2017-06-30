@@ -1,0 +1,59 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
+}
+::-webkit-scrollbar {
+	width: 0px;
+	background: trasparent;
+}
+/*
+body { 
+	background: url("RedBull.jpg") no-repeat center center fixed;
+	height: 100%;
+	background-size: 100%;
+}
+*/
+.bgimg {
+	position: relative;
+	opacity: .65;
+	background: no-repeat center center fixed;
+	height: 110%;
+	background-size: cover;
+}
+.about-bg {
+	background: url("Baku.jpg") no-repeat center center fixed;
+	height: 110%;
+	background-size: cover;
+}
+.contact-bg {
+	background: url("RalfSchumacher.jpg") no-repeat center center fixed;
+	height: 110%;
+	background-size: cover;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+h1{
+	padding-top: 10px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font: 24px "Lato", sans-serif;
+	color; #111;
+}
+.caption span.border {
+	font: 400 15px/1.8 "Lato", sans-serif;
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+	line-height: 3;
+}
