@@ -22,16 +22,6 @@ body {
 	height: 110%;
 	background-size: cover;
 }
-.about-bg {
-	background: url("Baku.jpg") no-repeat center center fixed;
-	height: 110%;
-	background-size: cover;
-}
-.contact-bg {
-	background: url("RalfSchumacher.jpg") no-repeat center center fixed;
-	height: 110%;
-	background-size: cover;
-}
 
 .caption {
 	position: absolute;
