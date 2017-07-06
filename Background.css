@@ -136,8 +136,13 @@ h1{
 	padding: 1%;
 	font-weight: bold;
 	font-size: 200%;
-	letter-spacing: .1 em;
+	letter-spacing: 8px;
 	line-height: 1;
+}
+@media screen and (max-height: 450px){
+	.caption span.border{
+		letter-spacing: 2px;
+	}
 }
 
 #name div{
