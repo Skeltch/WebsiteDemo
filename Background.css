@@ -10,6 +10,10 @@ body, html {
 	background: trasparent;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 .menu{
 	position: fixed;
 	z-index: 1;
