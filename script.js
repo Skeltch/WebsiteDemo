@@ -5,7 +5,7 @@ function openNav(){
 
 function closeNav(){
 	document.getElementById("navOverlay").style.height = "0%";
-	document.getElementById("menu").style.height="5%";
+	document.getElementById("menu").style.height="1.5em";
 }
 
 var scrollableElement = document.getElementById('scrollableElement');
@@ -26,7 +26,7 @@ var scrollableElement = document.getElementById('scrollableElement');
 			document.getElementById("menu").style.height="0%";
         }else if (delta > 0){
             console.log("UP");
-			document.getElementById("menu").style.height="5%";
+			document.getElementById("menu").style.height="1.5em%";
         }
 
     }
