@@ -30,5 +30,3 @@ var scrollableElement = document.getElementById('scrollableElement');
         }
 
     }
-
-document.getElementById("name").children[0].className +=" load";
