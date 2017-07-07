@@ -26,7 +26,7 @@ var scrollableElement = document.getElementById('scrollableElement');
 			document.getElementById("menu").style.height="0%";
         }else if (delta > 0){
             console.log("UP");
-			document.getElementById("menu").style.height="1.5em%";
+			document.getElementById("menu").style.height="1.5em";
         }
 
     }
