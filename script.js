@@ -32,31 +32,12 @@ var scrollableElement = document.getElementById('scrollableElement');
     }
 function loadImages(){
 	var allImages = "";
-	
-	for(var i=0; i<3; i++){
-		allImages += `
-			<div class="gallery" style="display: inline-block;">
-		<a target="_blank" href="gallery.jpg">
-			<img src="gallery.jpg" class="img" alt="">
-		</a>
-	</div>
-	<div class="gallery" style="display: inline-block;">
-		<a target="_blank" href="gallery.jpg">
-			<img src="Hamilton.jpg" class="img" alt="">
-		</a>
-	</div>
-	<div class="gallery" style="display: inline-block;">
-		<a target="_blank" href="gallery.jpg">
-			<img src="Hamilton3.jpg" class="img" alt="">
-		</a>
-	</div>
-	<div class="gallery" style="display: inline-block;">
-		<a target="_blank" href="gallery.jpg">
-			<img src="Rosberg3.jpg" class="img" alt="">
-		</a>
-	</div>
-	`
-		//allImages += '<div class="gallery" style="display: inline-block;"> <a target="_blank" href="gallery.jpg"> <img src="gallery.jpg" class="img" alt=""> </a> </div>';
+	var images=["Alonso.jpg", "BakuEdit.jpg", "gallery.jpg", "hamilton.gif", "Hamilton.jpg", "Hamilton2.jpg",
+			"Hamilton3.jpg", "kitten1.jpeg", "kitten2.jpeg", "kitten3.jpeg", "kitten4.jpeg", "kitten5.jpeg", 
+			"kitten6.jpeg", "P1.jpg", "P1Colored.jpg", "RalfSchumacher.jpg", "RedBull.jpg", "RedBullRain2.jpg",
+			"RedBullRain3.jpg", "Rosberg.jpg", "Rosberg2.jpg", "Rosberg3.jpg"];
+	for(var i=0; i<images.length; i++){
+		allImages += '<div class="gallery" style="display: inline-block;"> <a target="_blank" href='+images[i]+'> <img src='+images[i]+' class="img" alt=""> </a> </div>';
 	}
 	$('#photos').append(allImages);
 }
