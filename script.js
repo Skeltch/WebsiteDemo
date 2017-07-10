@@ -30,3 +30,33 @@ var scrollableElement = document.getElementById('scrollableElement');
         }
 
     }
+function loadImages(){
+	var allImages = "";
+	
+	for(var i=0; i<3; i++){
+		allImages += `
+			<div class="gallery" style="display: inline-block;">
+		<a target="_blank" href="gallery.jpg">
+			<img src="gallery.jpg" class="img" alt="">
+		</a>
+	</div>
+	<div class="gallery" style="display: inline-block;">
+		<a target="_blank" href="gallery.jpg">
+			<img src="Hamilton.jpg" class="img" alt="">
+		</a>
+	</div>
+	<div class="gallery" style="display: inline-block;">
+		<a target="_blank" href="gallery.jpg">
+			<img src="Hamilton3.jpg" class="img" alt="">
+		</a>
+	</div>
+	<div class="gallery" style="display: inline-block;">
+		<a target="_blank" href="gallery.jpg">
+			<img src="Rosberg3.jpg" class="img" alt="">
+		</a>
+	</div>
+	`
+		//allImages += '<div class="gallery" style="display: inline-block;"> <a target="_blank" href="gallery.jpg"> <img src="gallery.jpg" class="img" alt=""> </a> </div>';
+	}
+	$('#photos').append(allImages);
+}
