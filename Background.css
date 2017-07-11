@@ -219,6 +219,7 @@ a:visited {
 
 div.gallery {
     border: 1px solid #ccc;
+	display:  inline-block;
 }
 
 div.gallery:hover {
