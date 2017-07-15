@@ -218,28 +218,25 @@ a:visited {
 }
 
 div.gallery {
-    border: 1px solid #ccc;
+    border: 2px solid #fff;
 	display:  inline-block;
+	opacity: 0;
+	margin-bottom: 10px;
 }
 
 div.gallery:hover {
-    border: 1px solid #777;
+    border: 2px solid #777;
 }
 
 #photos {
    padding: 20px 15px 20px 15px;
    line-height: 0;
-   
    -webkit-column-count: 4;
-   -webkit-column-gap:   10px;
    -moz-column-count:    4;
-   -moz-column-gap:      10px;
    column-count:         4;
-   column-gap:           10px;
 }
 
 #photos div, img {
-  margin-bottom: 10px;
   width: 100% !important;
   height: auto !important;
 }

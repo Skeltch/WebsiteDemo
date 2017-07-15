@@ -37,14 +37,20 @@ function loadImages(){
 			"kitten6.jpeg", "P1.jpg", "P1Colored.jpg", "RalfSchumacher.jpg", "RedBull.jpg", "RedBullRain2.jpg",
 			"RedBullRain3.jpg", "Rosberg.jpg", "Rosberg2.jpg", "Rosberg3.jpg"];
 	for(var i=0; i<images.length; i++){
-		allImages += '<div class="gallery"> <a target="_blank" href='+images[i]+'> <img src='+images[i]+' class="img" id="img" alt=""> </a> </div>';
+		allImages = '<div class="gallery"> <a target="_blank" href='+images[i]+'> <img src='+images[i]+' class="img" id="img" alt=""> </a> </div>';
+		
+		$('#photos').append(allImages);
+		/*
+		$("#img").on('load', function(){
+			$(".gallery").fadeIn("slow");
+			//$(".gallery").show();
+		});
+		*/
 	}
-	$('#photos').append(allImages);
-	$(".gallery").hide();
-	var image = $("#img");
-	image.hide();
-	image.on('load', function(){
-		image.show();
-		$(".gallery").show();
+	var $images = $(".gallery");
+	$images.each(function(index){
+		$(this).delay(index*50).animate({opacity: 1}, 'slow', function(){
+			$(this).css('visibility','visible');
+		});
 	});
 }
