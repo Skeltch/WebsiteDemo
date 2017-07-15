@@ -5,7 +5,7 @@ function openNav(){
 
 function closeNav(){
 	document.getElementById("navOverlay").style.height = "0%";
-	document.getElementById("menu").style.height="5%";
+	document.getElementById("menu").style.height="1.5em";
 }
 
 var scrollableElement = document.getElementById('scrollableElement');
@@ -26,7 +26,25 @@ var scrollableElement = document.getElementById('scrollableElement');
 			document.getElementById("menu").style.height="0%";
         }else if (delta > 0){
             console.log("UP");
-			document.getElementById("menu").style.height="5%";
+			document.getElementById("menu").style.height="1.5em";
         }
 
     }
+function loadImages(){
+	var allImages = "";
+	var images=["Alonso.jpg", "BakuEdit.jpg", "gallery.jpg", "hamilton.gif", "Hamilton.jpg", "Hamilton2.jpg",
+			"Hamilton3.jpg", "kitten1.jpeg", "kitten2.jpeg", "kitten3.jpeg", "kitten4.jpeg", "kitten5.jpeg", 
+			"kitten6.jpeg", "P1.jpg", "P1Colored.jpg", "RalfSchumacher.jpg", "RedBull.jpg", "RedBullRain2.jpg",
+			"RedBullRain3.jpg", "Rosberg.jpg", "Rosberg2.jpg", "Rosberg3.jpg"];
+	for(var i=0; i<images.length; i++){
+		allImages += '<div class="gallery"> <a target="_blank" href='+images[i]+'> <img src='+images[i]+' class="img" id="img" alt=""> </a> </div>';
+	}
+	$('#photos').append(allImages);
+	$(".gallery").hide();
+	var image = $("#img");
+	image.hide();
+	image.on('load', function(){
+		image.show();
+		$(".gallery").show();
+	});
+}

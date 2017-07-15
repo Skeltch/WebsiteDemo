@@ -2,30 +2,15 @@
 <html id="scrollableElement" style="background-color: rgb(50, 50, 50);"	>
 <head>
 	<link rel="stylesheet" href="Background.css">
-	<script src="script.js"></script>
 	<base target="_blank"></base>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div id="navOverlay" class="overlay">
-	<a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
-	
-	<div class="overlay-content">
-		<a href="index.html" target="_self">Home</a>
-		<a href="javascript:void(0)" onclick="closeNav();" target="_self">About</a>
-		<a href="#">Projects</a>
-		<a href="#">Contact</a>
-	</div>
-</div>
-<div class="menu" id="menu">
-	<div class="menu-content">
-		<a id="menubtn" onclick="openNav()">&#9776;</a>
-	</div>
-</div>
 
-<div style="background-image: url(Hamilton.jpg);" class="bgimgFirst"></div>
+<div style="background-image: url(Hamilton.jpg);" class="bgimgFirst fade-in-fast"></div>
 <div class="text">
 	<h1>Formula 1</h1>
-		<p style="padding: 10px 100px;">
+		<p>
 			There were too many good photos to use for Formula 1 so most of these pages will be of Formula 1.
 			My favorite team would be Red Bull Racing with Daniel Ricciardo and Max Verstappen. The engineering,
 			strategy, and endurance required in Formula 1 is astounding. With new limitations set every year
@@ -48,10 +33,10 @@
 			-->
 		</p>
 </div>
-<div style="background-image: url(Rosberg.jpg);" class="bgimgFirst"></div>
+<div style="background-image: url(Rosberg.jpg);" class="bgimg"></div>
 <div class="text">
 	<h1>Hobbies</h1>
-		<p style="padding: 10px 100px;">
+		<p>
 			Ontop of Formula 1 and cars I enjoy playing a large variety of games. I enjoy games from Factorio to Rocket League 
 			and many more. I have also played the French Horn and Clarinet in the past. I love pets as well, adopting a stray 
 			cat from my neighborhood and saving a kitten whos mother died from the sewer. I frequently go to the gym and 
@@ -61,14 +46,30 @@
 			<!--Cat stuff here-->
 		</p>
 </div>
-<div style="background-image: url(Rosberg2.jpg);" class="bgimgFirst"></div>
+<div style="background-image: url(Rosberg2.jpg);" class="bgimgLast"></div>
 <div class="text">
 	<h1></h1>
-		<p">
+		<p>
 			Enjoy this picture of Nico Rosberg celebrating after winning the world championships at Abu Dhabi 2016.
 			You can view some pictures that I like that didn't make it to the website
 			<a href="Gallery.html"> here</a>, along with pictures of my cat, the kitten we saved, and more.
 		</p>
 </div>
+
+<div id="navOverlay" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+	
+	<div class="overlay-content">
+		<a href="index.html" target="_self">Home</a>
+		<a href="javascript:void(0)" onclick="closeNav();" target="_self">About</a>
+		<a href="#">Projects</a>
+		<a href="gallery.html" target="_self">Gallery</a>
+		<a href="#">Contact</a>
+	</div>
+</div>
+<div class="menu" id="menu">
+	<a id="menubtn" onclick="openNav()">&#9776;</a>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
