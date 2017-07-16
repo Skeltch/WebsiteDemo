@@ -47,7 +47,7 @@ function loadImages(){
 		var image=$(this);
 		image.find(".img").on('load', function(){
 			loaded++;
-			if(loaded==images.length){
+			if(loaded==images.length/2){
 				show();
 			}
 			//$(".gallery").fadeIn("slow");
