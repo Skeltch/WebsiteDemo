@@ -46,19 +46,9 @@ function loadImages(){
 	$images.each(function(index){
 		var image=$(this);
 		image.find(".img").on('load', function(){
-			loaded++;
-			if(loaded>images.length/4){
-				show();
-			}
-			//$(".gallery").fadeIn("slow");
-			//$(".gallery").show();
-		});
-	});
-}
-function show(){
-	$(".gallery").each(function(index){
-		$(this).delay(index*50).animate({opacity: 1}, 'slow', function(){
-			$(this).css('visibility','visible');
+			image.delay(index*50).animate({opacity: 1}, 'slow', function(){
+				image.css('visibility','visible');
+			});
 		});
 	});
 }
