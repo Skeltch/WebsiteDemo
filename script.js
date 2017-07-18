@@ -8,28 +8,36 @@ function closeNav(){
 	document.getElementById("menu").style.height="1.5em";
 }
 
+//Probably get rid of this and add it for mobile instead
+/*
 var scrollableElement = document.getElementById('scrollableElement');
 
-    scrollableElement.addEventListener('wheel', findScrollDirectionOtherBrowsers);
+scrollableElement.addEventListener('wheel', findScrollDirectionOtherBrowsers);
 
-    function findScrollDirectionOtherBrowsers(event){
-        var delta;
+function findScrollDirectionOtherBrowsers(event){
+	var delta;
 
-        if (event.wheelDelta){
-            delta = event.wheelDelta;
-        }else{
-            delta = -1 * event.deltaY;
-        }
+	if (event.wheelDelta){
+		delta = event.wheelDelta;
+	}else{
+		delta = -1 * event.deltaY;
+	}
 
-        if (delta < 0){
-            console.log("DOWN");
-			document.getElementById("menu").style.height="0%";
-        }else if (delta > 0){
-            console.log("UP");
-			document.getElementById("menu").style.height="1.5em";
-        }
+	if (delta < 0){
+		console.log("DOWN");
+		document.getElementById("menu").style.height="0%";
+	}else if (delta > 0){
+		console.log("UP");
+		document.getElementById("menu").style.height="1.5em";
+	}
+}
+*/
+/*
+$(document).on("scrollstart",function(){
+	document.getElementById("menu").style.height="1.5em";
+});
+*/
 
-    }
 function loadImages(){
 	var allImages = "";
 	var images=["Alonso.jpg", "BakuEdit.jpg", "gallery.jpg", "hamilton.gif", "Hamilton.jpg", "Hamilton2.jpg",

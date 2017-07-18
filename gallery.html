@@ -11,9 +11,23 @@
 <body style="background-color: rgb(50, 50, 50);" onload="loadImages();">
 
 <h1>Image Gallery</h1>
-<li id="photos">
+<section id="photos">
 
-</li>
+</section>
+<div id="navOverlay" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+	
+	<div class="overlay-content">
+		<a href="index.html" target="_self">Home</a>
+		<a href="about.html" target="_self">About</a>
+		<a href="gallery.html" target="_self">Projects</a>
+		<a href="javascript:void(0)" onclick="closeNav();" target="_self">Gallery</a>
+		<a href="contact.html" target="_self">Contact</a>
+	</div>
+</div>
+<div class="menu" id="menu">
+	<a id="menubtn" onclick="openNav()">&#9776;</a>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
