@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="lightbox.css">
+	<base target="_blank"></base>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <img src="RedBull.jpg" class="thumbnail" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="RedBullRain2.jpg" class="thumbnail" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="RedBullRain3.jpg" class="thumbnail" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="gallery.jpg" class="thumbnail" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="P1.jpg" class="thumbnail" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="P1Colored.jpg" class="thumbnail" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="kitten1.jpeg" class="thumbnail" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Hamilton3.jpg" class="thumbnail" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<div class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="slides">
+      <div class="numbertext">1 / 4</div>
+        <img src="RedBull.jpg" style="width:100%">
+    </div>
+
+    <div class="slides">
+      <div class="numbertext">2 / 4</div>
+        <img src="RedBullRain2.jpg" style="width:100%">
+    </div>
+
+    <div class="slides">
+      <div class="numbertext">3 / 4</div>
+        <img src="RedBullRain3.jpg" style="width:100%">
+    </div>
+
+    <div class="slides">
+      <div class="numbertext">4 / 4</div>
+        <img src="gallery.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+</div>
+<script src="lightbox.js"></script>
+</body>
+</html>

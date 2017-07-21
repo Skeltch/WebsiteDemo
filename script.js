@@ -57,16 +57,17 @@ function loadImages(){
 			"kitten6.jpeg", "P1.jpg", "P1Colored.jpg", "RalfSchumacher.jpg", "RedBull.jpg", "RedBullRain2.jpg",
 			"RedBullRain3.jpg", "Rosberg.jpg", "Rosberg2.jpg", "Rosberg3.jpg"];
 	for(var i=0; i<images.length; i++){
-		allImages = '<div class="gallery"> <a onclick="openModal();currentSlide(1);"> <img src='+images[i]+' class="img" id="img" alt=""> </a> </div>';
-		slideShow = '<div class="slides"> <div class="numbertext">' + i +' / ' + images.length + '</div> <img src=' + images[i] + ' class="modal-image""> </div>'
+		allImages = '<div class="gallery"> <a onclick="openModal();currentSlide('+(i+1)+');"> <img src='+images[i]+' class="img" id="img" alt=""> </a> </div>';
+		slideShow = '<div class="slides"> <div class="numbertext">' + (i+1) +' / ' + images.length + '</div> <img src=' + images[i] + ' class="modal-image""> </div>';
+		//slideShow = '<div class="slides" style="background-image: url(Alonso.jpg); background: no-repeat center center fixed; background-size: cover; height: 80%;"> <div class="numbertext">' + i + ' / ' + images.length + '</div> </div>'; 
 		$('#photos').append(allImages);
 		$('.modal-content').append(slideShow);
 	}
 	$('.modal-content').append('<a class="prev" onclick="changeSlides(-1)">&#10094;</a> <a class="next" onclick="changeSlides(1)">&#10095;</a>');
-	var $images = $(".gallery");
+	var images = $(".gallery");
 	
 	var loaded=0;
-	$images.each(function(index){
+	images.each(function(index){
 		var image=$(this);
 		image.find(".img").on('load', function(){
 			image.delay(index*50).animate({opacity: 1}, 'slow', function(){
@@ -101,7 +102,7 @@ function currentSlide(n){
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slides");
-  var captionText = document.getElementById("caption");
+  //var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
